@@ -1,4 +1,4 @@
-var _gulp = require('gulp');
+var _gulp = require('gulp-v3');
 var gulp = new _gulp.Gulp();
 var simpleTask = require('./simpleTask');
 var runSequence = require('../').use(gulp);

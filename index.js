@@ -45,7 +45,7 @@ function filterArray(arr) {
 function runSequence(gulp) {
 	// load gulp directly when no external was passed
 	if(gulp === undefined) {
-		gulp = require('gulp');
+		gulp = require('gulp-v3');
 	}
 
 	// Slice and dice the input to prevent modification of parallel arrays.

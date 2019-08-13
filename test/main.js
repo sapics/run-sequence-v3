@@ -3,7 +3,7 @@
 'use strict';
 
 var runSequence = require('../');
-var gulp = require('gulp');
+var gulp = require('gulp-v3');
 var should = require('should');
 var simpleTask = require('./simpleTask');
 var submodule = require('./submodule');

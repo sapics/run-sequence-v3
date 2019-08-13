@@ -1,14 +1,14 @@
 {
-  "name": "run-sequence",
+  "name": "run-sequence-v3",
   "description": "Run a series of dependent gulp tasks in order",
-  "version": "2.2.1",
-  "homepage": "https://github.com/OverZealous/run-sequence",
+  "version": "2.3.0",
+  "homepage": "https://github.com/sapics/run-sequence-v3",
   "repository": {
     "type": "git",
-    "url": "git://github.com/OverZealous/run-sequence.git"
+    "url": "git://github.com/sapics/run-sequence-v3.git"
   },
   "bugs": {
-    "url": "https://github.com/OverZealous/run-sequence/issues"
+    "url": "https://github.com/sapics/run-sequence-v3/issues"
   },
   "author": {
     "name": "Phil DeJarnett",
@@ -28,7 +28,7 @@
     "plugin-error": "^0.1.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp-v3": "^3.12.1",
     "mocha": "^3.4.2",
     "should": "~11.2.0"
   },
