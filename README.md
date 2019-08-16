@@ -26,17 +26,17 @@ If the final argument is a function, it will be used as a callback after all the
 
 ## Usage
 
-First, install `run-sequence` as a development dependency:
+First, install `run-sequence-v3` as a development dependency:
 
 ```shell
-npm install --save-dev run-sequence
+npm install --save-dev run-sequence-v3
 ```
 
 Then add use it in your gulpfile, like so (note these are only examples, please check the documentation for your functions for the correct way to use them):
 
 ```js
-var gulp = require('gulp');
-var runSequence = require('run-sequence');
+var gulp = require('gulp-v3');
+var runSequence = require('run-sequence-v3');
 var del = require('del');
 var fs = require('fs');
 
@@ -90,7 +90,7 @@ If you have a complex gulp setup with your tasks split up across different files
 
 var gulp = require('gulp'), // might be a different instance than the toplevel one
     // this uses the gulp you provide
-    runSequence = require('run-sequence').use(gulp);
+    runSequence = require('run-sequence-v3').use(gulp);
     
     // ...and then use normally
     runSequence('subtask1', 'subtask2');
@@ -105,7 +105,7 @@ Please note these are **global to the module**, and once set will affect every u
 Usage:
 
 ```js
-var runSequence = require('run-sequence');
+var runSequence = require('run-sequence-v3');
 runSequence.options.ignoreUndefinedTasks = true;
 gulp.task('task', function(cb) {
 	runSequence('foo', null, 'bar'); // no longer errors on `null`
@@ -122,8 +122,8 @@ gulp.task('task', function(cb) {
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
 
-[npm-url]: https://npmjs.org/package/run-sequence
-[npm-image]: https://badge.fury.io/js/run-sequence.png
+[npm-url]: https://npmjs.org/package/run-sequence-v3
+[npm-image]: https://badge.fury.io/js/run-sequence-v3.png
 
-[travis-url]: http://travis-ci.org/OverZealous/run-sequence
-[travis-image]: https://secure.travis-ci.org/OverZealous/run-sequence.png?branch=master
+[travis-url]: http://travis-ci.org/sapics/run-sequence-v3
+[travis-image]: https://secure.travis-ci.org/sapics/run-sequence-v3.png?branch=master
