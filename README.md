@@ -1,4 +1,4 @@
-# run-sequence
+# run-sequence-v3
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
